@@ -33,7 +33,7 @@ proguard/
 captures/
 
 # Intellij
-# *.iml
+*.iml
 
 # Keystore files
 *.jks
@@ -89,3 +89,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 .idea/workspace.xml
+
+# Others
+.idea/gradle.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/libraries
