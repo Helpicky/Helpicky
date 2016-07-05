@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     android:orientation="vertical"
-    android:gravity="center_vertical"
-    android:background="@drawable/first_use">
+    android:gravity="center_vertical">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -24,8 +23,9 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,8 +45,9 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,7 +70,8 @@
         android:text="@string/confirm"
         android:id="@+id/button5"
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:allowUndo="false" />
 
 </LinearLayout>
     <TextView
