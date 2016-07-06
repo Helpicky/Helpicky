@@ -115,23 +115,20 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_camera", Snackbar.LENGTH_LONG)
+        if (id == R.id.settings) {
+            Snackbar.make(findViewById(R.id.toolbar), "settings", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
-        } else if (id == R.id.nav_gallery) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_gallery", Snackbar.LENGTH_LONG)
+        } else if (id == R.id.diary) {
+            Snackbar.make(findViewById(R.id.toolbar), "diary", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
-        } else if (id == R.id.nav_slideshow) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_slideshow", Snackbar.LENGTH_LONG)
+        } else if (id == R.id.recommendation) {
+            Snackbar.make(findViewById(R.id.toolbar), "recommendation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
-        } else if (id == R.id.nav_manage) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_manage", Snackbar.LENGTH_LONG)
+        } else if (id == R.id.achievement) {
+            Snackbar.make(findViewById(R.id.toolbar), "achievement", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
-        } else if (id == R.id.nav_share) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_share", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
-        } else if (id == R.id.nav_send) {
-            Snackbar.make(findViewById(R.id.toolbar), "nav_send", Snackbar.LENGTH_LONG)
+        } else if (id == R.id.communicate) {
+            Snackbar.make(findViewById(R.id.toolbar), "communicate", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }
 
