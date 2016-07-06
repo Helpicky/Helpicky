@@ -116,17 +116,23 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Snackbar.make(findViewById(R.id.toolbar), "nav_camera", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         } else if (id == R.id.nav_gallery) {
-
+            Snackbar.make(findViewById(R.id.toolbar), "nav_gallery", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         } else if (id == R.id.nav_slideshow) {
-
+            Snackbar.make(findViewById(R.id.toolbar), "nav_slideshow", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         } else if (id == R.id.nav_manage) {
-
+            Snackbar.make(findViewById(R.id.toolbar), "nav_manage", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         } else if (id == R.id.nav_share) {
-
+            Snackbar.make(findViewById(R.id.toolbar), "nav_share", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         } else if (id == R.id.nav_send) {
-
+            Snackbar.make(findViewById(R.id.toolbar), "nav_send", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
