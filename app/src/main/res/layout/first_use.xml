@@ -5,28 +5,25 @@
     android:gravity="center"
     android:background="@drawable/first_use">
 
-    <Button
+    <ImageButton
+        android:src="@drawable/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:id="@+id/button"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp" />
+        android:id="@+id/imagebutton_login"
+        android:background="@null"/>
 
-    <Button
+    <ImageButton
+        android:src="@drawable/button_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp" />
+        android:id="@+id/imagebutton_signup"
+        android:background="@null" />
 
-    <Button
+    <ImageButton
+        android:src="@drawable/button_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/skip"
-        android:id="@+id/button3"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp" />
+        android:id="@+id/imagebutton_skip"
+        android:background="@null"/>
 
 </LinearLayout>
