@@ -3,4 +3,48 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/healthset"
+            android:id="@+id/healthset"
+            android:textColor="#000000"
+            android:textSize="32sp"/>
+
+        <ImageButton
+            android:src="@drawable/imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_healthset"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/hotproduct"
+            android:id="@+id/hotproduct"
+            android:textSize="32sp"/>
+        <ImageButton
+            android:src="@drawable/imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_hotproduct"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
 </LinearLayout>
