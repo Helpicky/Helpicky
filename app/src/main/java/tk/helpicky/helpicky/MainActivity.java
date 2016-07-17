@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
+import android.view.ViewStub;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+//        ViewStub stub = (ViewStub) findViewById(R.id.content);
+//        stub.setLayoutResource(R.layout.content_main);
+//        stub.inflate();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +120,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+//        ViewStub stub = (ViewStub) findViewById(R.id.content);
         if (id == R.id.settings) {
             Snackbar.make(findViewById(R.id.toolbar), "settings", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
@@ -124,13 +130,19 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.recommendation) {
             Snackbar.make(findViewById(R.id.toolbar), "recommendation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
+//            stub.setLayoutResource(R.layout.recommendation);
         } else if (id == R.id.achievement) {
             Snackbar.make(findViewById(R.id.toolbar), "achievement", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
+        } else if (id == R.id.scan) {
+            Snackbar.make(findViewById(R.id.toolbar), "scan", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+//            stub.setLayoutResource(R.layout.content_main);
         } else if (id == R.id.communicate) {
             Snackbar.make(findViewById(R.id.toolbar), "communicate", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }
+//        stub.inflate();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
